@@ -1,0 +1,365 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+body {
+    background-color: #c29fcb;
+    font-family: Arial, sans-serif;
+    color: var(--dark-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(106, 17, 203, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    height: 180px;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+
+}
+
+a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    min-width: max-content;
+    flex-shrink: 0;
+}
+
+a:hover {
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+
+.about {
+    background-color: rgb(239, 193, 238);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(239, 193, 238);
+    position: relative;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #2c003e;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+p {
+    padding-bottom: 30px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.picture {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color), var(--secondary-color)) border-box;
+    object-fit: cover;
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(106, 17, 203, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(106, 17, 203, 0.35);
+    border: 5px solid var(--accent-color);
+}
+
+footer {
+    padding: 30px;
+    background-color: rgb(239, 193, 238);
+}
+
+.footer_text {
+    text-align: center;
+    color: black;
+}
+
+.footer_link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 90px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 30%, rgba(255, 255, 255, 0.1) 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.social-link:hover::before {
+    opacity: 1;
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(106, 17, 203, 0.1);
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px !important;
+        padding: 20px 0 !important;
+        margin: 15px 0 !important;
+        letter-spacing: 0.5px;
+    }
+
+    h2 {
+        font-size: 26px !important;
+        padding-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding: 15px !important;
+    }
+
+    h3 {
+        font-size: 22px !important;
+        margin: 20px 0 12px !important;
+        padding: 12px 15px !important;
+    }
+
+
+    .about {
+        padding: 25px !important;
+        margin: 20px 0 !important;
+        border-radius: 15px !important;
+    }
+
+    p {
+        padding: 15px !important;
+        margin: 10px 0 !important;
+        line-height: 1.6 !important;
+        font-size: 16px !important;
+    }
+
+    .picture {
+        width: 350px !important;
+        height: 350px !important;
+        margin: 30px auto !important;
+    }
+
+    footer {
+        padding: 30px 20px !important;
+        margin-top: 30px !important;
+        border-radius: 10px 10px 0 0 !important;
+    }
+}
